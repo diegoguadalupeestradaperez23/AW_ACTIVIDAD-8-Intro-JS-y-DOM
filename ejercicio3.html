@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            text-align: center;
+            margin-top: 50px;
+            
+            
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #0097e6;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #e84118;
+        }
+        #imagen{
+            display: flex;
+            
+        }
+    </style>
+    <script>
+        function mostrarOcultar() {
+            var img = document.querySelector("#imagen");
+             if (img.style.display === "none") {
+         
+            img.style.display = "block";
+        } else {
+            
+            img.style.display = "none";
+        }
+        }
+    </script>
+</head>
+<body>
+     <ul><a href="index.html">Regresar</a></ul>
+     <img id="imagen" src="images/imagen ejemplo.webp" alt="imagen de ejemplo">
+     <button onclick="mostrarOcultar()">Mostrar y Ocultar imagen</button>
+</body>
+</html>
